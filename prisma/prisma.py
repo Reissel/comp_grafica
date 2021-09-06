@@ -29,8 +29,8 @@ def desenhaLados():
     raio = 0.7
     for i in range(0,n+1):
         a = (i/n) * 2 * math.pi
-        x = raio * math.sin(a)
-        y = raio * math.cos(a)
+        x = raio * math.cos(a)
+        y = raio * math.sin(a)
         glColor3fv(cores[(i+1)%len(cores)])
         glVertex3f(x,y,2)
     glEnd()
